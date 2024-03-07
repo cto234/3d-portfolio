@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+}
+
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #333; /* Dark gray background color */
+    padding: 10px 0; /* Adjust padding as needed */
+    color: white; /* Text color */
+    width: 100%;
+    overflow-x: hidden;
+  
+    .brand {
+      flex: 0.2; /* Adjust the flex value to control the width of the name section */
+    }
+  
+    .title {
+      text-decoration: none;
+      color: white; /* Text color for the name */
+      font-size: 18px; /* Adjust font size as needed */
+    }
+  
+    nav {
+      display: flex;
+      align-items: flex-end;
+      gap: 20px; /* Adjust spacing between links */
+      flex: 0.21;
+    }
+  
+    .projects-link,
+    .about-link,
+    .contact-link {
+      text-decoration: none;
+      color: white; /* Text color for links */
+    }
+  
+    .active {
+      font-weight: bold; /* Style for active link */
+    }
+  }
+  
