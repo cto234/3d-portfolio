@@ -11,13 +11,13 @@ const Header = () => {
                 </Link>
             </div>
             <nav>
-                <NavLink exact={true} activeClassName='active' className='projects-link' to='/projects'>
+                <NavLink exact="true" activeclassname='active' className='projects-link' to='/projects'>
                     projects
                 </NavLink>
-                <NavLink exact={true} activeClassName='active' className='about-link' to='/about'>
+                <NavLink exact="true" activeclassname='active' className='about-link' to='/about'>
                     about
                 </NavLink>
-                <NavLink exact={true} activeClassName='active' className='contact-link' to='/contact'>
+                <NavLink exact="true" activeclassname='active' className='contact-link' to='/contact'>
                     contact
                 </NavLink>
             </nav>
