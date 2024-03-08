@@ -1,51 +1,57 @@
 body {
-    margin: 0;
+  margin: 0;
 }
 
-
 .header-container {
-    position: fixed;
-    z-index: 1000;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    background-color: rgba(51, 51, 51, 0.3); /* Use rgba for transparency */
-    backdrop-filter: blur(16px);
-    padding: 30px 1.5%; 
-    color: white; /* Text color */
-    margin-top: 1.5%;
-    border-radius: 100px;
-    width: 95%;
-    overflow-x: hidden;
-    left: 50%;
-    transform: translateX(-50%);
-  
-    .brand {
+  position: fixed;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: rgba(51, 51, 51, 0.28); /* Use rgba for transparency */
+  backdrop-filter: blur(16px);
+  padding: 30px 1.5%; 
+  color: white; /* Text color */
+  margin-top: 1.5%;
+  border-radius: 100px;
+  width: 95%;
+  overflow-x: hidden;
+  left: 50%;
+  transform: translateX(-50%);
+
+  .brand {
       flex: 0.2; /* Adjust the flex value to control the width of the name section */
-    }
-  
-    .title {
+  }
+
+  .title {
       text-decoration: none;
       color: white; /* Text color for the name */
       font-size: 18px; /* Adjust font size as needed */
-    }
-  
-    nav {
+  }
+
+  nav {
       display: flex;
       align-items: flex-end;
       gap: 20px; /* Adjust spacing between links */
       flex: 0.21;
-    }
-  
-    .projects-link,
-    .about-link,
-    .contact-link {
-      text-decoration: none;
-      color: white; /* Text color for links */
-    }
-  
-    .active {
-      font-weight: bold; /* Style for active link */
-    }
+
+      .projects-link,
+      .about-link,
+      .contact-link {
+          padding-top: 1%;
+          text-decoration: none;
+          color: white; /* Text color for links */
+          position: relative; /* Add position relative for absolute positioning of the underline */
+
+          &:hover {
+              text-decoration: underline; /* Underline on hover */
+          }
+      }
   }
+
+  .active {
+      font-weight: bold; /* Style for active link */
+  }
+}
+
   
