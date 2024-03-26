@@ -1,6 +1,7 @@
 import React from 'react';
 import Head from '../Head/Head';
 import About from '../About/About';
+import Contact from '../Contact/Contact';
 import './home.scss';
 
 const Home = () => {
@@ -9,6 +10,7 @@ const Home = () => {
       <Head />
       <div className="content">
         <About id='aboutSection' />
+        <Contact id='contactSection' />
       </div>
     </div>
   );

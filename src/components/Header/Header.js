@@ -12,6 +12,14 @@ const Header = () => {
         });
       };
 
+      const scrollToContact = () => {
+        scroll.scrollTo('contactSection', {
+          duration: 800,
+          smooth: 'easeInOutQuad',
+        });
+      };
+
+
     return (
         <div className="header-container">
             <div className="brand">
@@ -31,11 +39,20 @@ const Header = () => {
                     onClick={scrollToAbout}
                     activeClass="active"
                     spy={true}
+                    offset={-100}
                     >about
                 </ScrollLink>
-                <NavLink exact="true" activeclassname='active' className='contact-link' to='/contact'>
-                    contact
-                </NavLink>
+                <ScrollLink
+                    className='contact-link'
+                    to="contactSection"
+                    smooth={true}
+                    duration={800}
+                    onClick={scrollToContact}
+                    activeClass="active"
+                    spy={true}
+                    offset={-100}
+                    >contact
+                    </ScrollLink>
             </nav>
         </div>
     );

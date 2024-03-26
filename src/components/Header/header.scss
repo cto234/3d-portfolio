@@ -27,7 +27,9 @@ body {
       text-decoration: none;
       color: white; /* Text color for the name */
       font-size: 18px; /* Adjust font size as needed */
-      margin-top: 3px;
+      margin-top: 2px;
+      margin-left: 7%;
+      white-space: nowrap;
   }
 
   nav {
@@ -64,8 +66,8 @@ body {
   .active {
       font-weight: bold; /* Style for active link */
       text-decoration: underline;
-      color: red;
   }
 }
+
 
   

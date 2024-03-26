@@ -1,0 +1,17 @@
+.contact-title{
+    font-size: 50px;
+    margin-top: 5%;
+}
+
+.link-container{
+    margin-top: 20%;
+    margin-bottom: 20%;
+}
+
+.email-link,
+.linkedin-link,
+.github-link{
+    display: block; /* Display each link on its own line */
+    color: blue; /* Set link color */
+    margin-bottom: 10px;
+}
