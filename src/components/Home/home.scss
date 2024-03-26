@@ -1,5 +1,8 @@
 .home-container {
-    overflow: hidden;
+    min-height: 100vh; /* Set minimum height to viewport height */
   }
-
   
+
+.content {
+    padding-top: 200px; /* Adjust as needed */
+  }

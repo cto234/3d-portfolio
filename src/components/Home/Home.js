@@ -1,13 +1,18 @@
 import React from 'react';
 import Head from '../Head/Head';
+import About from '../About/About';
 import './home.scss';
 
 const Home = () => {
   return (
-    <div style={{ overflow: 'hidden' }} className='home-container'>
+    <div className='home-container'>
       <Head />
+      <div className="content">
+        <About id='aboutSection' />
+      </div>
     </div>
   );
 }
+
 
 export default Home;
