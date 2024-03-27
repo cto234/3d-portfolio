@@ -1,7 +1,7 @@
 import './about.scss';
 
 const About = ({id}) => {
-
+      
     return(
         <div id={id} className='about-container'>
             <h1 className='about-title'>About</h1>
@@ -9,7 +9,7 @@ const About = ({id}) => {
                 My name is Connor O'Doherty
             </p>
             <p className='line line2'>
-                I am a Brooklyn-based web designer and frontend developer
+                I am a Brooklyn-based web designer and frontend developer 
             </p>
             <p className='line line3'>
                 In 2023 I graduated from New York University's College of Arts and Sciences with a bachelor's degree in computer science

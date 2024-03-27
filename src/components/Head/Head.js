@@ -14,11 +14,11 @@ function Model(props) {
 
 function Head() {
   return (
-    <div className="head-container">
-      <Canvas dpr={[1, 2]} camera={{ near: 0.1, far: 1000, fov: 45 }} >
-        <color attach="background" args={["#e8e8e8"]} /> {/* #cfcccc */}
+    <div className="head-container" >
+      <Canvas dpr={[1, 2]} camera={{ near: 0.1, far: 1000, fov: 30 }} >
+        <color attach="background" args={["#f7f0df"]} />
         <ambientLight intensity={1} />
-        <PresentationControls speed={1.5} global zoom={0.5} polar={[0, 0]} >
+        <PresentationControls speed={1.5} global zoom={false} polar={[0, 0]} >
           <Stage environment={"apartment"} intensity={0} shadows={false}>
             <Model scale={0.007} />
           </Stage>

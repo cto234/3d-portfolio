@@ -1,7 +1,9 @@
 .about-title{
-    font-size: 50px;
+    font-size: 65px;
+    margin: 25px;
     margin-top: 5%;
     margin-bottom: 8%;
+    border-top: 2px solid red;
 }
 
 .line {
@@ -10,9 +12,10 @@
     margin-left: 5%; 
     margin-right: 2%;
     margin-bottom: -1%;
-    text-align: left; 
+    text-align: left;
   }
-  .line1  {
+
+    .line1  {
     margin-left:2%;
     margin-bottom: 5%;
   }
@@ -44,44 +47,5 @@
   }
   .line8 {
     margin-left: 12%;
-    margin-bottom: 10%;
+    margin-bottom: 12%;
   }
-  
-
-/*
-  .line1  {
-    margin-left: 10%;
-    margin-bottom: 5%;
-  }
-
-  .line2 {
-    margin-left: 15%;
-    margin-bottom: 2%;
-  }
-
-  .line3 {
-    margin-left: 15%;
-    margin-bottom: 10%;
-  }
-  .line4 {
-    margin-left: 3%;
-    margin-bottom: -0.5%;
-  }
-  .line5 {
-    margin-left: 3%;
-    margin-bottom: 1%;
-  }
-  .line6 {
-    text-align: right;
-    margin-right: 5%;
-    margin-bottom: 6%;
-  }
-  .line7 {
-    margin-left: 20%;
-    margin-bottom: 2%;
-  }
-  .line8 {
-    margin-left: 20%;
-    margin-bottom: -1%;
-  }
-  */

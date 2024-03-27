@@ -1,8 +1,1 @@
-Make about and contact section on home page. Links in header just scroll to that spot.
-Make projects page
-Contact page should just open email. No form on page. Simple white text links to github and linkedin
-New font for everything except header
-Fix model resizing on scroll (maybe scroll = zoom in threejs, try to disable)
-Remove underline from projects (maybe just lighten background of the button)
-Try a light tan background?
-Add offset to auto scroll thing. Right now the title is behind the header when i click the link.
+Make README of all posted projects informative and woth screenshots, tech used, etc.

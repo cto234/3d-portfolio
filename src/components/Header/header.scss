@@ -2,6 +2,39 @@ body {
   margin: 0;
 }
 
+.projects-header {
+    position: fixed;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(51, 51, 51, 0.28);
+    backdrop-filter: blur(16px);
+    width: 80px; /* Adjust width as needed */
+    height: 80px; /* Adjust height as needed */
+    border-radius: 50%;
+    top: 20px; /* Adjust position from top */
+    left: 20px; /* Adjust position from left */
+}
+
+.home-button {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-link {
+    color: white;
+    text-decoration: none;
+
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
+
 .header-container {
   position: fixed;
   z-index: 1000;
@@ -30,6 +63,7 @@ body {
       margin-top: 2px;
       margin-left: 7%;
       white-space: nowrap;
+      cursor: pointer;
   }
 
   nav {
@@ -39,7 +73,6 @@ body {
       flex: 0.21;
       padding-right: 2%;
 
-      .projects-link,
       .about-link,
       .contact-link {
           padding-top: 1%;
@@ -47,18 +80,25 @@ body {
           padding: 5px;
           color: white; /* Text color for links */
           position: relative; /* Add position relative for absolute positioning of the underline */
+          cursor: pointer;
 
           &:hover {
               text-decoration: underline; /* Underline on hover */
           }
       }
       .projects-link {
+        padding-top: 1%;
+        text-decoration: none;
+        padding: 5px;
+        color: white; /* Text color for links */
+        position: relative; /* Add position relative for absolute positioning of the underline */
+        cursor: pointer;
         border: 1px solid white;
         border-radius: 20px;
             &:hover {
-                background-color: #e8e8e8;
-                color: rgba(51, 51, 51, 0.5);
-                border: 1px solid rgba(51, 51, 51, 0.5);
+                background-color: rgba(255, 255, 255, 0.28);
+                color: white;
+                border: 1px solid white;
             }
       }
   }

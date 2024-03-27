@@ -1,9 +1,29 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
 import './header.scss'; 
 
 const Header = () => {
+    const location = useLocation();
+
+    {/* Small header/home button when on projects page */}
+
+    if (location.pathname === '/projects') {
+        return (
+            <NavLink exact to='/' className='projects-header home-link'>
+                <div className="home-button">
+                    Back
+                </div>
+            </NavLink>
+        );
+    }
+
+    const scrollToTop = () => {
+        scroll.scrollToTop({
+            duration: 800,
+            smooth: 'easeInOutQuad'
+        });
+    };
 
     const scrollToAbout = () => {
         scroll.scrollTo('aboutSection', {
@@ -24,7 +44,7 @@ const Header = () => {
         <div className="header-container">
             <div className="brand">
                 <ScrollLink to="homeSection" smooth={true} duration={800}>
-                    <div className='title'>Connor O'Doherty</div>
+                    <div className='title' onClick={scrollToTop}>Connor O'Doherty</div>
                 </ScrollLink>
             </div>
             <nav>
@@ -39,7 +59,7 @@ const Header = () => {
                     onClick={scrollToAbout}
                     activeClass="active"
                     spy={true}
-                    offset={-100}
+                    offset={-110}
                     >about
                 </ScrollLink>
                 <ScrollLink
@@ -50,7 +70,7 @@ const Header = () => {
                     onClick={scrollToContact}
                     activeClass="active"
                     spy={true}
-                    offset={-100}
+                    offset={-110}
                     >contact
                     </ScrollLink>
             </nav>

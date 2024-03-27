@@ -1,0 +1,84 @@
+.projects-container {
+    padding: 40px;
+}
+
+.projects-title {
+    font-size: 65px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    border-bottom: 2px solid blue;
+
+}
+
+.projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.project-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 30px;
+    transition: filter 0.3s ease;
+    width: calc(50% - 20px); // Adjust the width to 50% of the container minus the gap
+    margin-bottom: 50px; // Adjust the bottom margin for spacing between rows
+    cursor: pointer;
+}
+
+.project-item:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5); // Semi-transparent white
+    backdrop-filter: blur(3px); // Adjust blur amount as needed
+}
+
+.project-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+.project-overlay {
+    position: absolute;
+    top: -5%;
+    left: -4%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.project-item:hover .project-overlay {
+    opacity: 1;
+}
+
+.project-overlay h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.project-overlay p {
+    font-size: 1em;
+    text-align: center;
+    word-wrap: break-word;
+    margin: 2%;
+}
+
+@media (max-width: 868px) {
+    .projects-grid .project-item {
+        width: 100%; // Make each item take up the full width on smaller screens
+    }
+}
