@@ -6,8 +6,6 @@ import './header.scss';
 const Header = () => {
     const location = useLocation();
 
-    {/* Small header/home button when on projects page */}
-
     if (location.pathname === '/projects') {
         return (
             <NavLink exact to='/' className='projects-header home-link'>
@@ -48,7 +46,7 @@ const Header = () => {
                 </ScrollLink>
             </div>
             <nav>
-                <NavLink exact="true" activeclassname='active' className='projects-link' to='/projects'>
+                <NavLink exact="true" activeClassname='active' className='projects-link' to='/projects'>
                     projects
                 </NavLink>
                 <ScrollLink
@@ -59,7 +57,7 @@ const Header = () => {
                     onClick={scrollToAbout}
                     activeClass="active"
                     spy={true}
-                    offset={-110}
+                    offset={-115}
                     >about
                 </ScrollLink>
                 <ScrollLink
@@ -70,7 +68,7 @@ const Header = () => {
                     onClick={scrollToContact}
                     activeClass="active"
                     spy={true}
-                    offset={-110}
+                    offset={-115}
                     >contact
                     </ScrollLink>
             </nav>

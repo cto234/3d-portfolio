@@ -6,16 +6,17 @@ import bookReviewsImage from '../../images/bookReviews.png'
 import blackjackImage from '../../images/blackjack.png'
 
 
-const ProjectItem = ({ name, description, repoLink, imageUrl }) => {
+const ProjectItem = ({ name, description, link, builtWith, imageUrl }) => {
     const handleClick = () => {
-        window.open(repoLink, '_blank');
+        window.open(link, '_blank');
     };
 
     return (
         <li className="project-item" onClick={handleClick}>
             <div className="project-overlay">
-                <h2>{name}</h2>
-                <p>{description}</p>
+                <p id='project-name'>{name}</p>
+                <p className='project-description'>{description}</p>
+                <p className='built-with'>Built using: {builtWith}</p>
             </div>
             <img className="project-image" src={imageUrl} alt={name} />
         </li>
@@ -28,31 +29,36 @@ const Projects = () => {
         {
             name: 'Travel Time',
             description: 'An interactive tool that determines how long different entities would take to travel between two points on a map',
-            repoLink: 'https://github.com/cto234/travel-time',
+            link: 'https://cto234.github.io/travel-time/',
+            builtWith: 'React, Google Maps API, Chakra UI',
             imageUrl: travelTimeImage,
         },
         {
             name: 'Photo Folder',
             description: 'A web app for organizing and storing images that you find on the web',
-            repoLink: 'https://github.com/cto234/photo-folder',
+            link: 'https://github.com/cto234/photo-folder',
+            builtWith: 'Node.js, MongoDB Atlas, Bcrypt, Handlebars ',
             imageUrl: photoFolderImage,
         },
         {
             name: 'Connor\'s Clothes',
             description: 'A mock ecommerce site for selling my clothes',
-            repoLink: 'https://github.com/cto234/connors-clothes',
+            link: 'https://cto234.github.io/connors-clothes/',
+            builtWith: 'React, Sass',
             imageUrl: connorsClothesImage,
         },
         {
             name: 'Book Reviews',
             description: 'A simple web app for me to post reviews and ratings for the books I read',
-            repoLink: 'https://github.com/cto234/book-reviews',
+            link: 'https://cto234.github.io/book-reviews/',
+            builtWith: 'React',
             imageUrl: bookReviewsImage,
         },
         {
             name: 'Blackjack',
             description: 'A minimalist game of blackjack',
-            repoLink: 'https://github.com/cto234/blackjack',
+            link: 'https://github.com/cto234/blackjack',
+            builtWith: 'Javascript',
             imageUrl: blackjackImage,
         },
     ];

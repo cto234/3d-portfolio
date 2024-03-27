@@ -75,10 +75,16 @@
     text-align: center;
     word-wrap: break-word;
     margin: 2%;
+
 }
 
 @media (max-width: 868px) {
     .projects-grid .project-item {
         width: 100%; // Make each item take up the full width on smaller screens
     }
+}
+
+#project-name{
+    font-size: larger;
+    font-weight: bold;
 }

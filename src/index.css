@@ -7,9 +7,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #f7f0df;
+  background-color: whitesmoke;
 }
-/* Old background color:  #e8e8e8, then white */
+/* Old background color:  #e8e8e8 (light gray), then #f7f0df (pale tan) */
 h1 {
   font-family: 'DM Serif Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
