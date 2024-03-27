@@ -7,7 +7,7 @@ import './App.css';
 function App() {
   return (
     <>
-    <Router basename='portfolio'>
+    <Router basename='3d-portfolio'>
       <Routes>
         <Route path="/" element={<Layout />} >
           <Route index element={<Home />} />

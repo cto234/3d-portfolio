@@ -3,7 +3,7 @@ import { useGLTF, Stage, PresentationControls } from "@react-three/drei";
 import './head.scss'
 
 function Model(props) {
-  const { scene } = useGLTF("/portfolio/head.glb");
+  const { scene } = useGLTF("/3d-portfolio/head.glb");
 
   useFrame(({ clock }) => {
     scene.rotation.y = clock.elapsedTime/15;
