@@ -1,4 +1,5 @@
 import './contact.scss';
+import resume from '../../images/resume.pdf'
 
 const Contact = ({id}) => {
     return(
@@ -8,6 +9,7 @@ const Contact = ({id}) => {
                 <a className='email-link' href="mailto:connor.t.odoherty@gmail.com">email</a>
                 <a className='linkedin-link' href="https://www.linkedin.com/in/connor-o-doherty-503249235/">linkedin</a>
                 <a className='github-link' href='https://github.com/cto234'>github</a>
+                <a href={resume} className='resume-link'>resume</a>
             </div>
         </div>
     )
