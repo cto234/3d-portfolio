@@ -23,6 +23,12 @@ const Header = () => {
         });
     };
 
+    const scrollToTopFast = () => {
+        scroll.scrollToTop({
+            duration: 0
+        });
+    };
+
     const scrollToAbout = () => {
         scroll.scrollTo('aboutSection', {
           duration: 800,
@@ -46,7 +52,7 @@ const Header = () => {
                 </ScrollLink>
             </div>
             <nav>
-                <NavLink exact="true" activeClassname='active' className='projects-link' to='/projects'>
+                <NavLink exact="true" activeClassname='active' className='projects-link' onClick={scrollToTopFast} to='/projects'>
                     projects
                 </NavLink>
                 <ScrollLink
