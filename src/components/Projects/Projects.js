@@ -4,6 +4,7 @@ import photoFolderImage from '../../images/photo-folder.png'
 import connorsClothesImage from '../../images/connors-clothes.png'
 import bookReviewsImage from '../../images/bookReviews.png'
 import blackjackImage from '../../images/blackjack.png'
+import budgetImage from '../../images/budget.png'
 
 
 const ProjectItem = ({ name, description, link, builtWith, imageUrl }) => {
@@ -32,6 +33,13 @@ const Projects = () => {
             link: 'https://cto234.github.io/travel-time/',
             builtWith: 'React, Google Maps API, Chakra UI',
             imageUrl: travelTimeImage,
+        },
+        {
+            name: 'Budget',
+            description: 'An app for visualizing incomes and expenses to help users save money',
+            link: 'https://cto234.github.io/budget/',
+            builtWith: 'React, Tailwind',
+            imageUrl: budgetImage,
         },
         {
             name: 'Photo Folder',
