@@ -1,3 +1,4 @@
 Make READMEs look good
 Get rid of that warning 
 Add resume to contact
+Switch from BrowserRouter to HashRouter. This ensures that the URLs are always interpreted as hash fragments, so the server always serves index.html.
