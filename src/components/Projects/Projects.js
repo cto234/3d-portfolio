@@ -5,6 +5,7 @@ import connorsClothesImage from '../../images/connors-clothes.png'
 import bookReviewsImage from '../../images/bookReviews.png'
 import blackjackImage from '../../images/blackjack.png'
 import budgetImage from '../../images/budget.png'
+import holidaysImage from '../../images/holidays.png'
 
 
 const ProjectItem = ({ name, description, link, builtWith, imageUrl }) => {
@@ -33,6 +34,13 @@ const Projects = () => {
             link: 'https://cto234.github.io/travel-time/',
             builtWith: 'React, Google Maps API, Chakra UI',
             imageUrl: travelTimeImage,
+        },
+        {
+            name: 'Holidays in United States',
+            description: 'A site for my band. Includes links to our music, videos, and info about upcoming and past shows',
+            link: 'https://cto234.github.io/holidays-in-united-states/',
+            builtWith: 'React, Tailwind',
+            imageUrl: holidaysImage,
         },
         {
             name: 'Budget',
