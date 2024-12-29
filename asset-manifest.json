@@ -1,22 +1,23 @@
 {
   "files": {
     "main.css": "/3d-portfolio/static/css/main.482ad2d0.css",
-    "main.js": "/3d-portfolio/static/js/main.3dbfe5c6.js",
+    "main.js": "/3d-portfolio/static/js/main.afdc0d2b.js",
     "static/js/453.655fb567.chunk.js": "/3d-portfolio/static/js/453.655fb567.chunk.js",
+    "static/media/holidays.png": "/3d-portfolio/static/media/holidays.508ec2bae6784f6fdb04.png",
     "static/media/connors-clothes.png": "/3d-portfolio/static/media/connors-clothes.ef4af2999be4f9d83b66.png",
+    "static/media/bookReviews.png": "/3d-portfolio/static/media/bookReviews.6a81fe21385a711d4764.png",
     "static/media/travel-time.png": "/3d-portfolio/static/media/travel-time.7c0bed294783f16ef5d1.png",
     "static/media/photo-folder.png": "/3d-portfolio/static/media/photo-folder.2da77ae412a6ed0c67db.png",
-    "static/media/bookReviews.png": "/3d-portfolio/static/media/bookReviews.07eb8ec2449abea228ea.png",
     "static/media/budget.png": "/3d-portfolio/static/media/budget.e8cc77fa11ae71951a96.png",
     "static/media/blackjack.png": "/3d-portfolio/static/media/blackjack.65361eb5f6e5037f87bf.png",
     "static/media/resume.pdf": "/3d-portfolio/static/media/resume.d348f0e0b47c1661ca35.pdf",
     "index.html": "/3d-portfolio/index.html",
     "main.482ad2d0.css.map": "/3d-portfolio/static/css/main.482ad2d0.css.map",
-    "main.3dbfe5c6.js.map": "/3d-portfolio/static/js/main.3dbfe5c6.js.map",
+    "main.afdc0d2b.js.map": "/3d-portfolio/static/js/main.afdc0d2b.js.map",
     "453.655fb567.chunk.js.map": "/3d-portfolio/static/js/453.655fb567.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.482ad2d0.css",
-    "static/js/main.3dbfe5c6.js"
+    "static/js/main.afdc0d2b.js"
   ]
 }
