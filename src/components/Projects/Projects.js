@@ -30,7 +30,7 @@ const Projects = () => {
     const projects = [
         {
             name: 'Travel Time',
-            description: 'An interactive tool that determines how long different entities would take to travel between two points on a map',
+            description: 'An interactive tool that determines how long different entities would take to travel between two points on a map using real-world locations and distances through the Google Maps API',
             link: 'https://cto234.github.io/travel-time/',
             builtWith: 'React, Google Maps API, Chakra UI',
             imageUrl: travelTimeImage,
@@ -44,21 +44,21 @@ const Projects = () => {
         },
         {
             name: 'Budget',
-            description: 'An app for visualizing incomes and expenses to help users save money',
+            description: 'An app for visualizing incomes and expenses to help users save money. Generates custom charts for data visualization ',
             link: 'https://cto234.github.io/budget/',
-            builtWith: 'React, Tailwind',
+            builtWith: 'React, Tailwind, MUI X-Charts',
             imageUrl: budgetImage,
         },
         {
             name: 'Photo Folder',
-            description: 'A web app for organizing and storing images that you find on the web',
+            description: 'A web app for organizing and storing images that you find on the web. Features user authentication and automatically stores users\' collections to MongoDB',
             link: 'https://github.com/cto234/photo-folder',
             builtWith: 'Node.js, MongoDB Atlas, Bcrypt, Handlebars ',
             imageUrl: photoFolderImage,
         },
         {
             name: 'Connor\'s Clothes',
-            description: 'A mock ecommerce site for selling my clothes',
+            description: 'A mock ecommerce site for selling my clothes. Features product sorting by size and price, shopping cart, and checkout functionality',
             link: 'https://cto234.github.io/connors-clothes/',
             builtWith: 'React, Sass',
             imageUrl: connorsClothesImage,
