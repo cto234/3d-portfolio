@@ -6,6 +6,7 @@ import bookReviewsImage from '../../images/bookReviews.png'
 import blackjackImage from '../../images/blackjack.png'
 import budgetImage from '../../images/budget.png'
 import holidaysImage from '../../images/holidays.png'
+import holidaysWordpress from '../../images/holidays-wordpress.png'
 
 
 const ProjectItem = ({ name, description, link, builtWith, imageUrl }) => {
@@ -34,6 +35,13 @@ const Projects = () => {
             link: 'https://cto234.github.io/travel-time/',
             builtWith: 'React, Google Maps API, Chakra UI',
             imageUrl: travelTimeImage,
+        },
+        {
+            name: 'Holidays in United States 2',
+            description: 'A second take on a site for my band, this one designed and built on Wordpress with a focus on modern web design aesthetics',
+            link: 'https://holidaysinunitedstatesband.wordpress.com',
+            builtWith: 'Wordpress',
+            imageUrl: holidaysWordpress,
         },
         {
             name: 'Holidays in United States',
