@@ -7,6 +7,7 @@ import blackjackImage from '../../images/blackjack.png'
 import budgetImage from '../../images/budget.png'
 import holidaysImage from '../../images/holidays.png'
 import holidaysWordpress from '../../images/holidays-wordpress.png'
+import outOfFive from '../../images/out-of-five.png'
 
 
 const ProjectItem = ({ name, description, link, builtWith, imageUrl }) => {
@@ -42,6 +43,13 @@ const Projects = () => {
             link: 'https://holidaysinunitedstatesband.wordpress.com',
             builtWith: 'Wordpress',
             imageUrl: holidaysWordpress,
+        },
+        {
+            name: 'Out of Five',
+            description: 'A more refined take on the review site. Dynamically loads albums from a playlist using the Spotify API to a custom local server.',
+            link: 'https://github.com/cto234/album-project',
+            builtWith: 'React, Tailwind, Spotify API',
+            imageUrl: outOfFive,
         },
         {
             name: 'Holidays in United States',
